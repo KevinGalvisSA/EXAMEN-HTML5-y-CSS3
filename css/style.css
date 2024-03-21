@@ -1,0 +1,261 @@
+@import url(variables.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: var(--color-primario);
+}
+
+.item_header{
+    background: var(--color-header);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: end;
+}
+
+.contenedor_header{
+    /*background: rebeccapurple;*/
+    width: 95%;
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    gap: 4vh;
+    overflow-x: scroll;
+}
+
+.hola1{
+    /*background: red;*/
+    border: 1px solid var(--color-secundario);
+    padding: 0vh 1vh;
+    width: 20vh;
+    height: 90%;
+    text-align: center;
+}
+
+.contenedor__header_texto{
+    /*background-color: red;*/
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 0vh 1vh;
+    font-size: 2vh;
+}
+
+.header_logo i{
+    padding: 0vh 1vh;
+    font-size: 7vh;
+}
+
+.item_main{
+    background: var(--color-main);
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: .1fr repeat(8, 1fr .1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ;
+}
+
+.item_main_4{
+    background: var(--color-main4);
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: .1fr repeat(8, 1fr .1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ;
+}
+
+.item_main_2{
+    background: var(--color-main2);
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: .1fr repeat(8, 1fr .1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ;
+}
+
+.item_main_3{
+    background: var(--color-main3);
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: .1fr repeat(8, 1fr .1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ". cajas cajas imagen imagen imagen imagen imagen productos productos productos productos productos productos productos productos  ."
+    ;
+}
+
+.item_cajas{
+    /*background: pink;*/
+    grid-area: cajas;
+}
+
+.contenedor_caja__logos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.caja_logo, .caja_logo2, .caja_logo3, .caja_logo4{
+    /*background: lightblue;*/
+    width: 100%;
+    height: 12.5%;
+    border: 1px solid var(--color-secundario);
+    text-align:center;
+}
+
+.caja_logo img, .caja_logo2 img, .caja_logo3 img, .caja_logo4 img{
+    /*background: red;*/
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.item_imagen{
+    /*background: blue;*/
+    grid-area: imagen;
+}
+
+.contenedor_caja__imagen{
+    /*background: darkcyan;*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.caja_imagen{
+    /*background: lightgreen;*/
+    width: 100%;
+    height: 80%;
+}
+
+.caja_imagen img{
+    border: 1px solid var(--color-secundario);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item_producto{
+    /*background: purple;*/
+    grid-area: productos;
+}
+
+.producto_titulo{
+    /*background: lightcoral;*/
+    width: 100%;
+    height: 17%;
+    padding: 0vh 1.5vh;
+    display: flex;
+    align-items: end;
+}
+
+.producto_titulo h4{
+    font-size: 5vh;
+}
+
+.producto_iconos{
+    /*background: lightcyan;*/
+    width: 65%;
+    height: 14%;
+    padding: 0vh 1.5vh;
+    display: flex;
+}
+
+.producto_iconos img{
+    width: 50%;
+    height: 75%;
+    object-fit: contain;
+}
+
+.producto_texto{
+    /*background: lightskyblue;*/
+    width: 72%;
+    height: 40%;
+    padding: 0vh 1.5vh;
+}
+
+.producto_precio{
+    /*background: darkolivegreen;*/
+    width: 50%;
+    height: 8%;
+    padding: 0vh 1.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producto_precio h4{
+    font-size: 3vh;
+}
+
+.producto_precio p{
+    font-size: 2.5vh;
+    text-align: end;
+}
+
+.producto_boton{
+    /*background: lightyellow;*/
+    width: 40%;
+    height: 10%;
+    padding: 0vh 1.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.producto_boton .a button{
+    background: rgba(22, 90, 5, 0.822);
+    color: var(--color-primario);
+    width: 20vh;
+    height: 5vh;
+}
